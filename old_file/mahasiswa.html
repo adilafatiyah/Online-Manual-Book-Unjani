@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/ibik/ibik.png" type="image/x-icon">
+    <title>IBIK Online-Docs</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <style>
+        .loader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #F5F8FA;
+            z-index: 9998;
+            text-align: center;
+        }
+        .plane-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+<!-- Pre loader -->
+<div id="loader" class="loader">
+    <div class="plane-container">
+        <div class="l-s-2 blink">LOADING</div>
+    </div>
+</div>
+
+<div id="app" class="paper-loading">
+    <div class="btn-fixed-top-left">
+        <a href="documentations.html"
+           class="btn-fab  btn-primary shadow1">
+            <i class="icon icon-clipboard-list"></i>
+        </a>
+    </div>
+<main class="page">
+    <!-- Header -->
+    <nav class="mainnav navbar navbar-default justify-content-between">
+       <div class="container relative">
+           <a class="offcanvas dl-trigger paper-nav-toggle" type="button" data-toggle="offcanvas"
+                   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <i></i>
+           </a>
+           <a class="navbar-brand" href="index.html">
+               <img class="d-inline-block align-top" alt="" src="assets/img/ibik/ibik_little.png">
+           </a>
+           <div class="paper_menu">
+               <div id="dl-menu" class="xv-menuwrapper responsive-menu">
+                <ul class="dl-menu align-items-center">
+                    <li>
+                        <a href="index.html">
+                             Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="documentations.html">
+                             Pegawai
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mahasiswa.html">
+                             Mahasiswa
+                        </a>
+                    </li>
+                </ul>
+            </div>
+<!-- Login modal -->
+           </div>
+       </div>
+    </nav>
+    <div class="search-section">
+        <div class="container">
+            <h1>Documentations
+                <small>version: 1</small>
+            </h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 sticky">
+                <!--SIDEBAR-->
+                <aside class="main-sidebar ">
+                    <div class="">
+                        <section class="sidebar p-t-b-40">
+                            <ul class="sidebar-menu scroll">
+                                <li>
+                                    <a href="#introduction">
+                                        <i class="icon icon-smiling-face"></i> <span>Introduction</span>
+                                    </a>
+                                </li>
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i>
+                                        <span>Register Mahasiswa Baru</span>
+                                        <i class="icon icon-angle-left pull-right"></i>
+                                    </a>
+                                    <ul class="treeview-menu" style="display: none;">
+                                        <li><a href="#maba_suratkeuangan" target="_blank"><i class="icon icon-circle-o"></i>Surat Pernyataan Keuangan</a></li>
+                                        <li><a href="#maba_datapeserta" target="_blank"><i class="icon icon-circle-o"></i>Isi Data Peserta</a></li>
+                                        <li><a href="#maba_uploadberkas" target="_blank"><i class="icon icon-circle-o"></i>Upload Berkas</a></li>
+                                        <li><a href="#maba_beritaacara" target="_blank"><i class="icon icon-circle-o"></i>Unduh Berita Acara</a></li>
+                                    </ul>
+                                </li>
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i>
+                                        <span>Register Mahasiswa Lama</span>
+                                        <i class="icon icon-angle-left pull-right"></i>
+                                    </a>
+                                    <ul class="treeview-menu" style="display: none;">
+                                        <li><a href="#mala_registerkuliah"><i class="icon icon-circle-o"></i>Register Matakuliah</a></li>
+                                        <li><a href="#mala_cetakksm"><i class="icon icon-circle-o"></i>Cetak KSM</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <!-- /.sidebar -->
+                </aside>
+            </div>
+            <article class="col-md-9 p-b-40 b-l p-40">
+                <!--Intoroduction-->
+                <section id="introduction">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4><i class="icon icon-smiling-face"></i> Introduction</h4>
+                            <hr>
+                            <p> Aplikasi X-Gracias terbagi menjadi tiga modul, yaitu Modul admisi (digunakan untuk
+                                registrasi ulang mahasiswa baru secara online dan onsite), Modul akademik (digunakan untuk kelola proses
+                                akademik baik untuk mahasiswa, dosen, BAA, dan Kaprodi), dan Modul HR (digunakan untuk kelola data pegawai
+                                pada Institut Bisnis dan Informatika Kesatuan Bogor).
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--/. Intoroduction-->
+
+                <!--Modul Admisi-->
+                <section id="#" class="">
+                    <section id="maba_suratkeuangan">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Upload Surat Pernyataan Keuangan</h4>
+                                <hr>
+                                <p>
+                                    Tahap pertama yang dilakukan mahasiswa baru, adalah upload surat pernyataan keuangan. Tata cara untuk melakukan verifikasi
+                                    upload surat pernyataan keuangan adalah sebagai berikut:
+                                    <div class="list-group">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Tata cara upload surat pernyataan keuangan:</li>
+                                            <li class="list-group-item list-group-item-primary">1. Login menggunakan username dan password yang didapat dari aplikasi PMB</li>
+                                            <li class="list-group-item list-group-item-secondary">2. Akses menu beranda</li>
+                                            <li class="list-group-item list-group-item-success">3. Klik button choose file
+                                                <img src="assets/img/ibik/mahasiswa/maba_1.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            </li>
+                                            <li class="list-group-item list-group-item-danger">4. Upload berkas</li>
+                                          </ul>
+                                      </div>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="maba_datapeserta">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Isi Data Diri</h4>
+                                <hr>
+                                <p> Tahap kedua setelah melakukan upload surat pernyataan keuangan adalah isi data diri. Data diri yang
+                                    harus diisi oleh mahasiswa baru antara lain: data pribadi, riwayat pendidikan, data keluarga,
+                                    data tambahan, kuesioner, dan unduh data lengkap. Tata cara untuk melakukan
+                                    isi data diri adalah sebagai berikut:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara isi data diri:</li>
+                                        <li class="list-group-item list-group-item-light">1. Akses menu mengisi data peserta</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Isi Data Pribadi
+                                            <img src="assets/img/ibik/mahasiswa/maba_2.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">3. Isi Riwayat Pendidikan</li>
+                                        <li class="list-group-item list-group-item-secondary">4. Isi Data Keluarga</li>
+                                        <li class="list-group-item list-group-item-light">5. Isi Data Tambahan
+                                            <img src="assets/img/ibik/mahasiswa/maba_2.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                                <p>Pastikan ukuran almamater sesuai badan</p>
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">6. Isi kuesioner</li>
+                                        <li class="list-group-item list-group-item-secondary">7. Unduh Data Lengkap
+                                            <img src="assets/img/ibik/mahasiswa/maba_4.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                                <p>Klik untuk mengakhiri proses isi data diri</p>
+                                            <img src="assets/img/ibik/mahasiswa/maba_5.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                                <p>Klik untuk unduh data diri</p>
+                                        </li>
+                                      </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="maba_uploadberkas">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Upload Berkas</h4>
+                                <hr>
+                                <p> Tahap ketiga registrasi mahasiswa baru adalah upload berkas.
+                                    Berikut adalah tata cara untuk melakukan upload berkas:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara Upload Berkas:</li>
+                                        <li class="list-group-item list-group-item-light">1. Akses menu dokumen peserta PMB</li>
+                                        <li class="list-group-item list-group-item-light">2. Upload Berkas
+                                            <img src="assets/img/ibik/mahasiswa/maba_6.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                                <p>Pastikan dokumen yang diupload terlihat jelas dan terbaca</p>
+                                        </li>
+                                      </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="maba_beritaacara">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Unduh Berita Acara</h4>
+                                <hr>
+                                <p> Tahap terakhir dari registrasi mahasiswa baru adalah unduh berita acara.
+                                    Berikut adalah tata cara untuk unduh berita acara:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara unduh berita acara:</li>
+                                        <li class="list-group-item list-group-item-light">1. Akses menu berita acara</li>
+                                        <li class="list-group-item list-group-item-light">2. Berikut tampilan unduh berita acara
+                                            <img src="assets/img/ibik/mahasiswa/maba_7.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                      </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!--/.Modul Admisi-->
+
+                <!--Modul Registrasi Mahasiswa lama-->
+                <section id="#" class="">
+                    <section id="mala_registerkuliah">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Registrasi Matakuliah</h4>
+                                <hr>
+                                <p>
+                                    Tahap pertama yang dilakukan adalah registrasi matakuliah. Tata cara untuk melakukan 
+                                    registrasi matakuliah adalah sebagai berikut:
+                                    <div class="list-group">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Tata cara registrasi matakuliah:</li>
+                                            <li class="list-group-item list-group-item-primary">1. Scrolldown menu registrasi</li>
+                                            <li class="list-group-item list-group-item-secondary">2. Scrolldown menu registrasi</li>
+                                            <li class="list-group-item list-group-item-success">3. Akses menu registrasi matakuliah</li>
+                                            <li class="list-group-item list-group-item-danger">4. Pilih tab sesuai tingkat yang sedang diambil
+                                                <img src="assets/img/ibik/mahasiswa/mala_1.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                                <p>Pastikan jadwal tidak ada yang bentrok</p>
+                                            </li>
+                                          </ul>
+                                      </div>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="mala_cetakksm">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Cetak KSM</h4>
+                                <hr>
+                                <p> Tahap terakhir untuk registrasi matakuliah adalah cetak KSM, cetak KSM dapat
+                                    dilakukan apabila sudah di ACC oleh dosen wali.
+                                    Tata cara untuk melakukan
+                                   cetak KSM adalah sebagai berikut:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara registrasi matakuliah:</li>
+                                            <li class="list-group-item list-group-item-primary">1. Scrolldown menu registrasi</li>
+                                            <li class="list-group-item list-group-item-secondary">2. Scrolldown menu registrasi</li>
+                                            <li class="list-group-item list-group-item-success">3. Akses menu registrasi matakuliah</li>
+                                            <li class="list-group-item list-group-item-danger">4. Klik cetak KSM
+                                                <img src="assets/img/ibik/mahasiswa/mala_2.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            </li>
+                                            <li class="list-group-item list-group-item-danger">5. Berikut adalah contoh KSM
+                                                <img src="assets/img/ibik/mahasiswa/mala_3.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            </li>
+                                      </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!--/.Modul Admisi-->
+
+            </article>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class=" col-lg-2 col-xl-3 col-12 responsive-phone"><a href="#" class="brand">
+                <img src="assets/img/ibik/ibik_little.png" alt="Knowledge">
+                <span class="circle"></span>
+            </a>
+            </div><div class="col-6  col-md-4 col-lg-2">
+                <h6>Modul Admisi</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Penerimaan Camaba</a></li>
+                    <li><a href="#">Penerimaan Maba</a></li>
+                    <li><a href="#">Registrasi Ulang Maba</a></li>
+                </ul>
+            </div>
+            <div class="col-6  col-md-4 col-lg-2">
+                <h6>Modul Akademik</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Kelola Rencana Mengajar</a>
+                    </li>
+                    <li><a href="#">Registrasi Matkul Mala</a>
+                    </li>
+                    <li><a href="#">TA/PA</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6  col-md-4 col-lg-2">
+                <h6>Modul HR</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Kelola Pegawai</a>
+                    </li>
+                    <li><a href="#">Cuti</a>
+                    </li>
+                    <li><a href="#">Kelengkapan Data Pegawai</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-12 col-12 col-xl-3 responsive-phone">
+                <h6>IBIK Bogor</h6>
+                <div class="copyrights">
+                    <p>&#xA9; 2020 IBIK Bogor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<!--End Page page_wrrapper -->
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

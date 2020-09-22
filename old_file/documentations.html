@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/ibik/ibik.png" type="image/x-icon">
+    <title>IBIK Online-Docs</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <style>
+        .loader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #F5F8FA;
+            z-index: 9998;
+            text-align: center;
+        }
+        .plane-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+<!-- Pre loader -->
+<div id="loader" class="loader">
+    <div class="plane-container">
+        <div class="l-s-2 blink">LOADING</div>
+    </div>
+</div>
+
+<div id="app" class="paper-loading">
+    <div class="btn-fixed-top-left">
+        <a href="documentations.html"
+           class="btn-fab  btn-primary shadow1">
+            <i class="icon icon-clipboard-list"></i>
+        </a>
+    </div>
+<main class="page">
+    <!-- Header -->
+    <nav class="mainnav navbar navbar-default justify-content-between">
+       <div class="container relative">
+           <a class="offcanvas dl-trigger paper-nav-toggle" type="button" data-toggle="offcanvas"
+                   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <i></i>
+           </a>
+           <a class="navbar-brand" href="index.html">
+               <img class="d-inline-block align-top" alt="" src="assets/img/ibik/ibik_little.png">
+           </a>
+           <div class="paper_menu">
+               <div id="dl-menu" class="xv-menuwrapper responsive-menu">
+                <ul class="dl-menu align-items-center">
+                    <li>
+                        <a href="index.html">
+                             Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="documentations.html">
+                             Pegawai
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mahasiswa.html">
+                             Mahasiswa
+                        </a>
+                    </li>
+                </ul>
+            </div>
+<!-- Login modal -->
+           </div>
+       </div>
+    </nav>
+    <div class="search-section">
+        <div class="container">
+            <h1>Documentations
+                <small>version: 1</small>
+            </h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 sticky">
+                <!--SIDEBAR-->
+                <aside class="main-sidebar ">
+                    <div class="">
+                        <section class="sidebar p-t-b-40">
+                            <ul class="sidebar-menu scroll">
+                                <li>
+                                    <a href="#introduction">
+                                        <i class="icon icon-smiling-face"></i> <span>Introduction</span>
+                                    </a>
+                                </li>
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i>
+                                        <span>Register Mahasiswa Baru</span>
+                                        <i class="icon icon-angle-left pull-right"></i>
+                                    </a>
+                                    <ul class="treeview-menu" style="display: none;">
+                                        <li><a href="#admisi"><i class="icon icon-circle-o"></i>Aktor dan Alur Proses</a></li>
+                                        <li><a href="#admisi_verifikasikeuanganpmb" target="_blank"><i class="icon icon-circle-o"></i>Verifikasi Keuangan</a></li>
+                                        <li><a href="#admisi_inputjadwal" target="_blank"><i class="icon icon-circle-o"></i>Input Jadwal Register Online</a></li>
+                                        <li><a href="#admisi_generatekelas" target="_blank"><i class="icon icon-circle-o"></i>Generate Kelas</a></li>
+                                        <li><a href="#admisi_registeronsite" target="_blank"><i class="icon icon-circle-o"></i>Register Onsite</a></li>
+                                    </ul>
+                                </li>
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i>
+                                        <span>Matakuliah Tawar</span>
+                                        <i class="icon icon-angle-left pull-right"></i>
+                                    </a>
+                                    <ul class="treeview-menu" style="display: none;">
+                                        <li><a href="#matkultawar_aktor"><i class="icon icon-circle-o"></i>Aktor</a></li>
+                                        <li><a href="#matkultawar_matkulsks"><i class="icon icon-circle-o"></i>Kelola Matakuliah & SKS</a></li>
+                                        <li><a href="#matkultawar_createjadwal" target="_blank"><i class="icon icon-circle-o"></i>Membuat Jadwal Kuliah</a></li>
+                                    </ul>
+                                </li>
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i>
+                                        <span>Register Mahasiswa Lama</span>
+                                        <i class="icon icon-angle-left pull-right"></i>
+                                    </a>
+                                    <ul class="treeview-menu" style="display: none;">
+                                        <li><a href="#register_aktor"><i class="icon icon-circle-o"></i>Aktor</a></li>
+                                        <li><a href="#register_ksm"><i class="icon icon-circle-o"></i>Kelola Rencana Mengajar</a></li>
+                                        <li><a href="#register_setting"><i class="icon icon-circle-o"></i>Pengaturan Register</a></li>
+                                        <li><a href="#register_keuangan"><i class="icon icon-circle-o"></i>Verifikasi Keuangan</a></li>
+                                        <li><a href="#register_acc"><i class="icon icon-circle-o"></i>ACC registrasi</a></li>
+                                        <!--<li><a href="#register_accregister" target="_blank"><i class="icon icon-circle-o"></i>Pindah Kelas & Alokasi</a></li>-->
+                                        <li><a href="#register_monitoring" target="_blank"><i class="icon icon-circle-o"></i>Monitoring Register Mahasiswa</a></li>
+                                    </ul>
+                                </li>
+
+                                
+                                
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i>
+                                        <span>Kurikulum</span>
+                                        <i class="icon icon-angle-left pull-right"></i>
+                                    </a>
+                                    <ul class="treeview-menu" style="display: none;">
+                                        <li><a href="#kurikulum"><i class="icon icon-circle-o"></i>Aktor</a></li>
+                                        <li><a href="#kurikulum_kelolakuri" target="_blank"><i class="icon icon-circle-o"></i>Kelola Kurikulum</a></li>
+                                        <li><a href="#kurikulum_accwadek" target="_blank"><i class="icon icon-circle-o"></i>Approval Wadek 1</a></li>
+                                        <li><a href="#kurikulum_accwarek" target="_blank"><i class="icon icon-circle-o"></i>Approval Warek 1</a></li>
+                                        <li><a href="#kurikulum_pengaturan" target="_blank"><i class="icon icon-circle-o"></i>Pengaturan GBPP dan SAP</a></li>
+                                    </ul>
+                                </li>
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i>
+                                        <span>Perwalian</span>
+                                        <i class="icon icon-angle-left pull-right"></i>
+                                    </a>
+                                    <ul class="treeview-menu" style="display: none;">
+                                        <li><a href="#perwalian_aktor"><i class="icon icon-circle-o"></i>Aktor</a></li>
+                                        <li><a href="#perwalian_dataMahasiswa" target="_blank"><i class="icon icon-circle-o"></i>Informasi Data Mahasiswa</a></li>
+                                        <li><a href="#perwalian_konsultasi" target="_blank"><i class="icon icon-circle-o"></i>Konsultasi</a></li>
+                                        <li><a href="#perwalian_catatanlks" target="_blank"><i class="icon icon-circle-o"></i>Catatan LKS</a></li>
+                                        <li><a href="#perwalian_lulus" target="_blank"><i class="icon icon-circle-o"></i>Pengajuan Lulus Tingkat</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#data_mahasiswa">
+                                        <i class="icon icon-clipboard-list"></i> <span>Data Mahasiswa</span>
+                                    </a>
+                                </li>
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i>
+                                        <span>Data Pegawai</span>
+                                        <i class="icon icon-angle-left pull-right"></i>
+                                    </a>
+                                    <ul class="treeview-menu" style="display: none;">
+                                        <li><a href="#data_pegawai"><i class="icon icon-circle-o"></i>Aktor</a></li>
+                                        <li><a href="#dataPegawai_adminSDM" target="_blank"><i class="icon icon-circle-o"></i>Kelola dan Monitoring</a></li>
+                                        <li><a href="#dataPegawai_pegawai" target="_blank"><i class="icon icon-circle-o"></i>Kelengkapan data pegawai</a></li>
+                                    </ul>
+                                </li>
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i>
+                                        <span>Cuti</span>
+                                        <i class="icon icon-angle-left pull-right"></i>
+                                    </a>
+                                    <ul class="treeview-menu" style="display: none;">
+                                        <li><a href="#cuti"><i class="icon icon-circle-o"></i>Aktor</a></li>
+                                        <li><a href="#cuti_adminSDM" target="_blank"><i class="icon icon-circle-o"></i>Kelola dan Monitoring</a></li>
+                                        <li><a href="#cuti_pegawai" target="_blank"><i class="icon icon-circle-o"></i>Pengajuan cuti pegawai</a></li>
+                                        <li><a href="#cuti_approval" target="_blank"><i class="icon icon-circle-o"></i>Approval cuti pegawai</a></li>
+                                    </ul>
+                                </li>
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i>
+                                        <span>Nilai</span>
+                                        <i class="icon icon-angle-left pull-right"></i>
+                                    </a>
+                                    <ul class="treeview-menu" style="display: none;">
+                                        <li><a href="#nilai"><i class="icon icon-circle-o"></i>Aktor</a></li>
+                                        <li><a href="#nilai_aktor" target="_blank"><i class="icon icon-circle-o"></i>Pengaturan</a></li>
+                                        <li><a href="#nilai_laporan" target="_blank"><i class="icon icon-circle-o"></i>Laporan Nilai</a></li>
+                                        <li><a href="#nilai_transkrip" target="_blank"><i class="icon icon-circle-o"></i>Transkrip Nilai</a></li>
+                                        <li><a href="#nilai_kelola" target="_blank"><i class="icon icon-circle-o"></i>Kelola Nilai</a></li>
+                                        <li><a href="#nilai_data" target="_blank"><i class="icon icon-circle-o"></i>Data Nilai</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i>
+                                        <span>BAP</span>
+                                        <i class="icon icon-angle-left pull-right"></i>
+                                    </a>
+                                    <ul class="treeview-menu" style="display: none;">
+                                        <li><a href="#BAP"><i class="icon icon-circle-o"></i>Aktor</a></li>
+                                        <li><a href="#BAP_aktor" target="_blank"><i class="icon icon-circle-o"></i>Cetak Daftar Hadir</a></li>
+                                        <li><a href="#BAP_" target="_blank"><i class="icon icon-circle-o"></i>Kelola BAP</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i> <span>PPM</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i> <span>TA/PA</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i> <span>Yudisium</span>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i> <span>TAK</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i> <span>SKPI</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i> <span>Ijazah</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i> <span>Wisuda</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i> <span>Transkrip</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-clipboard-list"></i> <span>Feeder</span>
+                                    </a>
+                                </li>
+                                
+
+                            </ul>
+                        </section>
+                    </div>
+                    <!-- /.sidebar -->
+                </aside>
+            </div>
+            <article class="col-md-9 p-b-40 b-l p-40">
+                <!--Intoroduction-->
+                <section id="introduction">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4><i class="icon icon-smiling-face"></i> Introduction</h4>
+                            <hr>
+                            <p> Aplikasi X-Gracias terbagi menjadi tiga modul, yaitu Modul admisi (digunakan untuk
+                                registrasi ulang mahasiswa baru secara online dan onsite), Modul akademik (digunakan untuk kelola proses
+                                akademik baik untuk mahasiswa, dosen, BAA, dan Kaprodi), dan Modul HR (digunakan untuk kelola data pegawai
+                                pada Institut Bisnis dan Informatika Kesatuan Bogor).
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--/. Intoroduction-->
+
+                <!--Modul Admisi-->
+                <section id="admisi" class="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4><i class="icon icon-folders"></i> Modul Admisi</h4>
+                            <hr>
+                            <p>Berikut ini adalah aktor dan alur proses dari Modul admisi:</p>
+                            <table class="table table-bordered table-striped">
+                                <tbody>
+                                <tr>
+                                    <th scope="row"><code>MABA</code></th>
+                                    <td>Mahasiswa baru wajib melakukan register ulang pada Modul admisi setelah melakukan pelunasan
+                                        pembayaran tagihan biaya pendidikan. Kemudian mahasiswa baru wajib
+                                        melakukan register onsite di IBIK Bogor.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Admisi</code></th>
+                                    <td>Admisi wajib melakukan validasi registrasi ulang baik secara online maupun onsite</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Keuangan</code></th>
+                                    <td>Keuangan wajib melakukan validasi pelunasan biaya pendidikan terhadap mahasiswa yang 
+                                        sudah melakukan pembayaran.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>BAA</code></th>
+                                    <td>BAA wajib melakukan generate kelas</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <img src="assets/img/ibik/admisi/alur_admisi.png" class="img-fluid" alt="Responsive image" style="margin-bottom: 15px;">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="table-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <section id="admisi_verifikasikeuanganpmb">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Verifikasi Tagihan Pembayaran PMB</h4>
+                                <hr>
+                                <p>
+                                    Modul ini digunakan untuk verifikasi pelunasan tagihan pembayaran PMB oleh bagian keuangan, agar mahasiswa
+                                    dapat melanjutkan proses pendaftaran ulang secara online pada aplikasi Admisi. Tata cara untuk melakukan verifikasi
+                                    pelunasan tagihan pembayaran PMB adalah sebagai berikut:
+                                    <div class="list-group" style="margin-bottom: 25px;">
+                                        <ul class="list-group">
+                                            <li class="list-group-item list-group-item-primary">Tata cara verifikasi keuangan:</li>
+                                            <li class="list-group-item list-group-item-light">1. Scrolldown menu finansial</li>
+                                            <li class="list-group-item list-group-item-light">2. Scrolldown menu data transaksi bank</li>
+                                            <li class="list-group-item list-group-item-light">3. Akses menu transaksi rekening koran</li>
+                                            <li class="list-group-item list-group-item-light">4. Pilih Tab NON HOST 2 HOST</li>
+                                            <li class="list-group-item list-group-item-light">5. Pilih button "Download Template Non-H2H BNI"</li>
+                                            <li class="list-group-item list-group-item-light">6. Berikut tampilan excel yang sudah diunduh
+                                                <img src="assets/img/ibik/registermahasiswalama/keuangan_excel.png"
+                                                    class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                                    <p>Yang perlu diketahui adalah baris kedua merupakan contoh, sehingga diharuskan untuk
+                                                        menghapus baris tersebut. Kemudian user dapat mengisi
+                                                        template excel dari data mahasiswa yang telah melunasi tagihan.
+                                                        gambar diatas adalah contoh proses pengisian data</p>
+                                                    <P>Dan jangan lupa untuk menambahkan biaya admin sesuai dengan ketentuan</P>
+                                            </li>
+                                            <li class="list-group-item list-group-item-light">7. Unggah file excel, Kemudian klik preview</li>
+                                            <li class="list-group-item list-group-item-light">8. Klik Tombol Generate
+                                                <img src="assets/img/ibik/registermahasiswalama/keuangan_generate.png"
+                                                    class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                                <p>Setelah  proses pada menu TRANSAKSI REKENING KORAN selesai,
+                                                    maka selanjutnya adalah proses pelunasan
+                                                </p>
+                                            </li>
+                                            <li class="list-group-item list-group-item-primary">Tata cara pelunasan </li>
+                                            <li class="list-group-item list-group-item-light">9. Scrolldown menu finansial</li>
+                                            <li class="list-group-item list-group-item-light">10. Scrolldown menu pembayaran reguler</li>
+                                            <li class="list-group-item list-group-item-light">11. Akses menu data pembayaran</li>
+                                            <li class="list-group-item list-group-item-light">12. Klik tab MABA</li>
+                                            <li class="list-group-item list-group-item-light">13. Pilih nama mahasiswa dan klik button "pencil" pada kolom aksi</li>
+                                            <li class="list-group-item list-group-item-light">14. Klik icon uang pada kolom aksi
+                                                <img src="assets/img/ibik/admisi/admisi_verifikasikeuangan.PNG"
+                                                    class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            </li>
+                                            <li class="list-group-item list-group-item-light">15. Klik button tambah pembayaran
+                                                <img src="assets/img/ibik/admisi/admisi_addbutton.png"
+                                                    class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            </li>
+                                            <li class="list-group-item list-group-item-light">16. Isi data pembayaran
+                                                <img src="assets/img/ibik/admisi/admisi_addpelunanasan.png"
+                                                    class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                                <p> Pada pop up tersebut, ADMIN KEUANGAN dapat mengisi data sesuai dengan data yang telah
+                                                    diunggah melalui menu TRANSAKSI REKENING KORAN</p>
+                                            </li>
+                                            <li class="list-group-item list-group-item-light">17. Klik simpan</li>
+                                          </ul>
+                                      </div>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="admisi_inputjadwal">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Input Jadwal Register Ulang Online</h4>
+                                <hr>
+                                <p> Modul ini digunakan untuk melakukan input jadwal register ulang oleh admin admisi, agar mahasiswa
+                                    baru dapat melakukakn proses register ulang secara online. Tata cara untuk melakukan input jadwal
+                                    register ulang online bagi mahasiswa baru adalah sebagai berikut:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara input jadwal register ulang:</li>
+                                        <li class="list-group-item list-group-item-light">1. Akses website dan lakukan login menggunakan akun admin admisi</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Scrolldown menu PMB</li>
+                                        <li class="list-group-item list-group-item-light">3. Scrolldown menu pengaturan</li>
+                                        <li class="list-group-item list-group-item-secondary">4. Akses menu jadwal registrasi</li>
+                                        <li class="list-group-item list-group-item-light">5. Pilih periode dan inputkan data jadwal tanggal mulai dan tanggal akhir
+                                            <img src="assets/img/ibik/admisi/admisi_inputjawalregister.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-secondary">6. Klik simpan button</li>
+                                      </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="admisi_generatekelas">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Generate kelas</h4>
+                                <hr>
+                                <p> Modul ini digunakan untuk melakukan generate kelas oleh BAA.
+                                    Berikut adalah tata cara untuk melakukan generate kelas:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara Generate kelas:</li>
+                                        <li class="list-group-item list-group-item-light">1. Akses website dan lakukan login menggunakan akun BAA</li>
+                                        <li class="list-group-item list-group-item-light">2. Scrolldown menu PMB</li>
+                                        <li class="list-group-item list-group-item-light">3. Scrolldown menu pengaturan</li>
+                                        <li class="list-group-item list-group-item-light">4. Akses menu generate Lihat generate kelas</li>
+                                        <li class="list-group-item list-group-item-light">5. Kelola Kelas
+                                            <img src="assets/img/ibik/admisi/admisi_generatekelas.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                      </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="admisi_registeronsite">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Register Onsite</h4>
+                                <hr>
+                                <p> Modul ini digunakan untuk melakukan register onsite oleh admin admisi untuk melakukan generate NIM.
+                                    Berikut adalah tata cara untuk melakukan register onsite:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara Register Onsite:</li>
+                                        <li class="list-group-item list-group-item-light">1. Akses website dan lakukan login menggunakan akun admin admisi</li>
+                                        <li class="list-group-item list-group-item-light">2. Scrolldown menu PMB</li>
+                                        <li class="list-group-item list-group-item-light">3. akses menu registrasi</li>
+                                        <li class="list-group-item list-group-item-light">4. pilih dan klik nomor peserta
+                                            <img src="assets/img/ibik/admisi/registeronsite1.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">5. Checklist data</li>
+                                            <img src="assets/img/ibik/admisi/registeronsite2.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        <li class="list-group-item list-group-item-light">6. Klik simpan button</li>
+                                        <li class="list-group-item list-group-item-light">7. Klik cetak KTM</li>
+                                        <li class="list-group-item list-group-item-success">Setelah melakukan Checklist data mahasiswa admin admisi bisa melakukan
+                                            aktivasi token SSO dengan cara sebagai berikut:
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">1. Klik link aktivasi
+                                            <img src="assets/img/ibik/admisi/registeronsite3.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">2. Masukan kode aktivasi dan masukan kode captcha</li>
+                                        <li class="list-group-item list-group-item-light">3. Klik submit button</li>
+                                      </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!--/.Modul Admisi-->
+                <!--Matakuliah Tawar-->
+                <section id="#" class="">
+                    <section id="matkultawar_aktor">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Aktor Menu Matakuliah Tawar</h4>
+                                <hr>
+                                <p>Berikut ini adalah aktor proses dari menu matakuliah tawar</p>
+                                <table class="table table-bordered table-striped">
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row"><code>Kaprodi</code></th>
+                                        <td> Kaprodi bertugas untuk melakukan kelola SKS dan matakuliah, serta membuat jadwal kuliah.
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="matkultawar_matkulsks">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Kelola SKS & Matakuliah</h4>
+                                <hr>
+                                <p> Modul ini digunakan untuk melakukan kelola SKS dan matakuliah oleh kaprodi.
+                                    Berikut adalah tata cara untuk melakukan kelola SKS & Matakuliah:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-secondary">Tata cara kelola SKS:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu registrasi</li>
+                                        <li class="list-group-item list-group-item-light">2. Scrolldown menu pengaturan</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu aturan maks SKS</li>
+                                        <li class="list-group-item list-group-item-light">4. Kelola aturan SKS
+                                            <img src="assets/img/ibik/registermahasiswalama/atursks.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-primary">Tata cara kelola Matakuliah:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu registras</li>
+                                        <li class="list-group-item list-group-item-light">2. Scrolldown menu matakuliah</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses tambah matakuliah</li>
+                                        <li class="list-group-item list-group-item-light">4. Masukan data</li>
+                                        <li class="list-group-item list-group-item-light">5. Klik submit button</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="matkultawar_createjadwal">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Membuat Jadwal Kuliah</h4>
+                                <hr>
+                                <p> Modul ini digunakan untuk membuat jadwal kuliah oleh kaprodi, tatacara untuk
+                                    membuat jadwal kuliah ada dua cara yaitu melalui tambah jadwal dengan satu persatu
+                                    dan dengan import jadwal.
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara tambah jadwal:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu registrasi</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Scrolldown menu jadwal</li>
+                                        <li class="list-group-item list-group-item-light">3. akses menu tambah jadwal</li>
+                                        <li class="list-group-item list-group-item-secondary">4. isi data
+                                            <img src="assets/img/ibik/registermahasiswalama/createjadwal.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">5. Klik simpan button</li>
+                                    </ul>
+                                </div>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara import jadwal:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu registrasi</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Scrolldown menu jadwal</li>
+                                        <li class="list-group-item list-group-item-light">3. akses menu import jadwal</li>
+                                        <li class="list-group-item list-group-item-secondary">4. download template dan isi</li>
+                                        <li class="list-group-item list-group-item-light">5. Masukan file excel yang telah diisi</li>
+                                        <li class="list-group-item list-group-item-secondary">6. Klik import button</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    </section>
+                <!--/Matakuliah Tawar-->
+                <!--Modul Register Mahasiswa Lama-->
+                <section id="register_aktor" class="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4><i class="icon icon-folders"></i> Modul Register Mahasiswa Lama</h4>
+                            <hr>
+                            <p>Berikut ini adalah aktor proses dari modul register mahasiswa lama:</p>
+                            <table class="table table-bordered table-striped">
+                                <tbody>
+                                <tr>
+                                    <th scope="row"><code>Mahasiswa</code></th>
+                                    <td>Mahasiswa wajib melakukan pembayaran semester, kemudian melakukan register ulang sesuai
+                                        dengan jadwal pelaksanaan register ulang.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>BAA</code></th>
+                                    <td>Pada modul register mahasiswa lama, BAA bertugas untuk mengelola hak pengaturan registrasi,
+                                        mengatur semester, mengatur jadwal registrasi, mengatur matakuliah pengecualian, dan menyediakan
+                                        ruangan. Selain itu BAA dapat melakukan monitoring register mahasiswa lama.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Admin Keuangan</code></th>
+                                    <td>Pada modul register mahasiswa lama admin keuangan harus melakukan verifikasi tagihan mahasiswa lama,
+                                        yang sudah lunas.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Dosen</code></th>
+                                    <td>Pada modul register mahasiswa lama dosen bertugas untuk melakukan kelola rencana mengajar.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Doswal</code></th>
+                                    <td>ACC register mahasiswa lama.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="table-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <section id="register_ksm">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Kelola Rencana Mengajar</h4>
+                                <hr>
+                                <p> Modul ini digunakan untuk melakukan mengelola rencana mengajar dan mengelola ketersediaan waktu
+                                    mengajar oleh dosen, berikut tata cara untuk melakukan kelola rencana mengajar:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 25px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-primary">Tata cara kelola rencana mengajar:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu registrasi</li>
+                                        <li class="list-group-item list-group-item-light">2. Scrolldown menu jadwal</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu rencana mengajar dosen</li>
+                                        <li class="list-group-item list-group-item-light">4. Kelola rencana mengajar
+                                            <img src="assets/img/ibik/registermahasiswalama/teachingplan.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            <img src="assets/img/ibik/registermahasiswalama/teachadd.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                      </ul>
+                                  </div>
+                                  <div class="list-group" style="margin-bottom: 25px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-primary">Tata cara kelola ketersediaan waktu mengajar:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu registrasi</li>
+                                        <li class="list-group-item list-group-item-light">2. Scrolldown menu jadwal</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu ketersediaan jadwal dosen</li>
+                                        <li class="list-group-item list-group-item-light">4. Kelola ketersediaan waktu mengajar
+                                            <img src="assets/img/ibik/registermahasiswalama/ketersediaanrencana.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">5. Klik simpan button</li>
+                                      </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="register_setting">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Pengaturan Register Ulang Mahasiswa Lama</h4>
+                                <hr>
+                                <p>
+                                    Modul ini digunakan untuk melakukan pengaturan register ulang mahasiswa lama oleh BAA.
+                                    Pengaturan yang diatur oleh BAA antara lain: mengelola hak pengaturan registrasi,
+                                    mengatur semester, mengatur jadwal registrasi, mengatur matakuliah pengecualian, dan menyediakan
+                                    ruangan.
+                                    <div class="list-group" style="margin-bottom: 25px;">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Tata cara mengelola hak pengaturan registrasi:</li>
+                                            <li class="list-group-item list-group-item-primary">1. Scrolldown menu registrasi</li>
+                                            <li class="list-group-item list-group-item-secondary">2. Scrolldown menu pengaturan</li>
+                                            <li class="list-group-item list-group-item-success">3. Akses hak registrasi</li>
+                                            <li class="list-group-item list-group-item-danger">4. Checklist hak akses user role
+                                                <img src="assets/img/ibik/registermahasiswalama/hakakses.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            </li>
+                                            <li class="list-group-item list-group-item-warning">5. Klik button perbarui hak akses</li>
+                                          </ul>
+                                      </div>
+                                      <div class="list-group" style="margin-bottom: 25px;">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Tata cara pengaturan semester:</li>
+                                            <li class="list-group-item list-group-item-primary">1. Scrolldown menu administrator akademik</li>
+                                            <li class="list-group-item list-group-item-secondary">2. Akses menu tetapkan semester aktif</li>
+                                            <li class="list-group-item list-group-item-success">3. Kelola tetapkan semester aktif
+                                                <img src="assets/img/ibik/registermahasiswalama/tetapkansemesteraktif.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            </li>
+                                          </ul>
+                                      </div>
+                                      <div class="list-group" style="margin-bottom: 25px;">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Tata cara pengaturan jadwal registrasi:</li>
+                                            <li class="list-group-item list-group-item-primary">1. Scrolldown menu registrasi</li>
+                                            <li class="list-group-item list-group-item-secondary">2. Scrolldown menu pengaturan</li>
+                                            <li class="list-group-item list-group-item-success">3. Akses jadwal registrasi</li>
+                                            <li class="list-group-item list-group-item-danger">4. Kelola jadwal registrasi
+                                                <img src="assets/img/ibik/registermahasiswalama/jadwalregistrasi.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            </li>
+                                          </ul>
+                                      </div>
+                                      <div class="list-group" style="margin-bottom: 25px;">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Tata cara pengaturan mata kuliah pengecualian:</li>
+                                            <li class="list-group-item list-group-item-primary">1. Scrolldown menu registrasi</li>
+                                            <li class="list-group-item list-group-item-secondary">2. Scrolldown menu pengaturan</li>
+                                            <li class="list-group-item list-group-item-success">3. Akses mata kuliah eksepsi</li>
+                                            <li class="list-group-item list-group-item-danger">4. Kelola mata kuliah eksepsi
+                                                <img src="assets/img/ibik/registermahasiswalama/kelolaeksepsi.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            </li>
+                                          </ul>
+                                      </div>
+                                      <div class="list-group" style="margin-bottom: 25px;">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Tata cara pengaturan ruangan:</li>
+                                            <li class="list-group-item list-group-item-primary">1.Scrolldown menu registrasi </li>
+                                            <li class="list-group-item list-group-item-secondary">2. Scrolldown menu master</li>
+                                            <li class="list-group-item list-group-item-success">3. Akses menu ruangan</li>
+                                            <li class="list-group-item list-group-item-danger">4. Kelola Ruangan
+                                                <img src="assets/img/ibik/registermahasiswalama/kelolaruangan.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            </li>
+                                          </ul>
+                                      </div>
+
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="register_keuangan">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Verifikasi Keuangan</h4>
+                                <hr>
+                                <p> Modul ini digunakan untuk melakukan verifikasi keuangan oleh admin keuangan,
+                                    berikut tata cara untuk melakukan verifikasi keuangan::
+                                </p>
+                                <div class="list-group" style="margin-bottom: 25px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-primary">Tata cara verifikasi keuangan:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu finansial</li>
+                                        <li class="list-group-item list-group-item-light">2. Scrolldown menu data transaksi bank</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu transaksi rekening koran</li>
+                                        <li class="list-group-item list-group-item-light">4. Pilih Tab NON HOST 2 HOST</li>
+                                        <li class="list-group-item list-group-item-light">5. Pilih button "Download Template Non-H2H BNI"</li>
+                                        <li class="list-group-item list-group-item-light">6. Berikut tampilan excel yang sudah diunduh
+                                            <img src="assets/img/ibik/registermahasiswalama/keuangan_excel.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                                <p>Yang perlu diketahui adalah baris kedua merupakan contoh, sehingga diharuskan untuk
+                                                    menghapus baris tersebut. Kemudian user dapat mengisi
+                                                    template excel dari data mahasiswa yang telah melunasi tagihan.
+                                                    gambar diatas adalah contoh proses pengisian data</p>
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">7. Unggah file excel, Kemudian klik preview</li>
+                                        <li class="list-group-item list-group-item-light">8. Klik Tombol Generate
+                                            <img src="assets/img/ibik/registermahasiswalama/keuangan_generate.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            <p>Setelah  proses pada menu TRANSAKSI REKENING KORAN selesai,
+                                                maka selanjutnya adalah proses pelunasan
+                                            </p>
+                                        </li>
+                                        <li class="list-group-item list-group-item-primary">Tata cara pelunasan </li>
+                                        <li class="list-group-item list-group-item-light">9. Scrolldown menu finansial</li>
+                                        <li class="list-group-item list-group-item-light">10. Scrolldown menu pembayaran reguler</li>
+                                        <li class="list-group-item list-group-item-light">11. Akses menu data pembayaran</li>
+                                        <li class="list-group-item list-group-item-light">12. Klik tab MALA</li>
+                                        <li class="list-group-item list-group-item-light">13. Pilih nama mahasiswa dan klik button "pencil" pada kolom aksi</li>
+                                        <li class="list-group-item list-group-item-light">14. Klik icon uang pada kolom aksi
+                                            <img src="assets/img/ibik/registermahasiswalama/keuangan_pelunasan.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">15. Klik button tambah pembayaran
+                                            <img src="assets/img/ibik/registermahasiswalama/keuangan_datapembayaran.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">16. Isi data pembayaran
+                                            <img src="assets/img/ibik/registermahasiswalama/keuangan_popup.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            <p> Pada pop up tersebut, ADMIN KEUANGAN dapat mengisi data sesuai dengan data yang telah
+                                                diunggah melalui menu TRANSAKSI REKENING KORAN</p>
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">17. Klik simpan</li>
+                                      </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="register_acc">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>ACC Registrasi</h4>
+                                <hr>
+                                <p> Modul ini digunakan untuk acc registrasi mata kuliah oleh dosen wali, tatacara untuk
+                                    acc registrasi mata kuliah adalah sebagai berikut:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara acc registrasi mata kuliah:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu registrasi</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Akses menu pilih mahasiswa</li>
+                                        <li class="list-group-item list-group-item-light">3. Pilih mahasiswa dan klik button ACC
+                                            <img src="assets/img/ibik/registermahasiswalama/doswal_acc.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">4. klik button ACC
+                                            <img src="assets/img/ibik/registermahasiswalama/doswal_end.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            <p>Pastikan bahwa jadwal mahasiswa tersebut tidak saling bentrok</p>
+                                        </li>
+                                      </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--
+                    <section id="register_accregister">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Kelola pindah kelas & alokasi perkuliahan</h4>
+                                <hr>
+                                <p> Modul ini digunakan untuk melakukan kelola pindah kelas dan alokasi perkuliahan yang dilakukan oleh kaprodi,
+                                    berikut tata cara untuk melakukan kelola pindah kelas dan alokasi perkuliahan:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-secondary">Tata cara pindah kelas:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu registrasi</li>
+                                        <li class="list-group-item list-group-item-light">2. Scrolldown menu Kelola registrasi</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu perpindahan kelas</li>
+                                        <li class="list-group-item list-group-item-light">4. Kelola perpindahan kelas</li>
+                                      </ul>
+                                  </div>
+                                  <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-secondary">Tata cara alokasi perkuliahan:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu registrasi</li>
+                                        <li class="list-group-item list-group-item-light">2. Scrolldown menu matakuliah</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu alokasi matakuliah</li>
+                                        <li class="list-group-item list-group-item-light">4. Kelola alokasi matakuliah</li>
+                                      </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </section>
+                    -->
+                    <section id="register_monitoring">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Monitoring Register Mahasiswa</h4>
+                                <hr>
+                                <p> Modul ini digunakan untuk melakukan monitoring register mahasiswa oleh BAA.
+                                    Berikut adalah tata cara untuk monitoring register mahasiswa:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-secondary">Tata cara melihat status registrasi mahasiswa:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu registrasi</li>
+                                        <li class="list-group-item list-group-item-light">2. Scrolldown menu kelola registrasi </li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu  status registrasi</li>
+                                      </ul>
+                                  </div>
+                                  <!-- <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-secondary">Tata cara melihat status registrasi:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu registrasi</li>
+                                        <li class="list-group-item list-group-item-light">2. Scrolldown menu registrasi</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu status registrasi mahasiswa</li>
+                                      </ul>
+                                  </div> -->
+                                  <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-secondary">Tata cara melihat keterlambatan registrasi mahasiswa:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu registrasi</li>
+                                        <li class="list-group-item list-group-item-light">2. Scrolldown menu registrasi</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu  tagihan registrasi</li>
+                                      </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!--/.Modul Register Mahasiswa Lama-->
+                
+                <!--Modul Kurikulum-->
+                <section id="kurikulum" class="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4><i class="icon icon-folders"></i> Kurikulum</h4>
+                            <hr>
+                            <p>Berikut ini adalah aktor dan alur proses dari Modul Kurikulum:</p>
+                            <table class="table table-bordered table-striped">
+                                <tbody>
+                                <tr>
+                                    <th scope="row"><code>Kaprodi</code></th>
+                                    <td> Pada modul ini, Kaprodi mempunyai beberapa tugas yaitu; kelola kurikulum dan kelola GBPP & SAP
+                                         pada matakuliah.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Wadek 1</code></th>
+                                    <td> Wakil Dekan meninjau usulan kurikulum dan menyetujuinya untuk disampaikan kepada
+                                         wakil rektor.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Warek 1</code></th>
+                                    <td> Wakil Rektor menyetujui usulan kurikulum yang telah disaring wakil dekan.
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="table-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <section id="kurikulum_kelolakuri">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Kelola Kurikulum</h4>
+                                <hr>
+                                <p>
+                                    Aplikasi Kurikulum merupakan aplikasi pengelolaan basis data master kurikulum yang akan
+                                    mendokumentasikan kurikulum (matakuliah) untuk pengajaran. Pengadaan kurikulum akan
+                                    diperuntukkan selama periode tertentu yaitu setiap 4 tahun sekali untuk semester genap maupun ganjil.
+                                    <div class="list-group">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Tata cara kelola kurikulum:</li>
+                                            <li class="list-group-item list-group-item-primary">1. Scrolldown menu kurikulum</li>
+                                            <li class="list-group-item list-group-item-secondary">2. Scrolldown menu kelola kurikulum</li>
+                                            <li class="list-group-item list-group-item-success">3. Akses menu lihat kurikulum</li>
+                                            <li class="list-group-item list-group-item-danger">4. Kelola Kurikulum
+                                                <img src="assets/img/ibik/kurikulum/kaprodi_kelolakurikulum.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                                <img src="assets/img/ibik/kurikulum/kaprodi_kelola.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            </li>
+                                            <li class="list-group-item">Tata cara add kurikulum:</li>
+                                            <li class="list-group-item list-group-item-primary">5. Scrolldown menu kurikulum</li>
+                                            <li class="list-group-item list-group-item-secondary">6. Scrolldown menu kelola kurikulum</li>
+                                            <li class="list-group-item list-group-item-success">7. Akses menu tambah matakuliah</li>
+                                            <li class="list-group-item list-group-item-danger">8. isi data
+                                                <img src="assets/img/ibik/kurikulum/kaprdi_addmatkul.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            </li>
+                                            <li class="list-group-item list-group-item-primary">10. Klik Submit</li>
+                                        </ul>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="kurikulum_accwadek">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Approval by Wadek 1</h4>
+                                <hr>
+                                <p> Modul ini digunakan untuk melakukan approval kurikulum oleh wadek 1.
+                                    Tata cara untuk approval kurikulum
+                                    adalah sebagai berikut:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara approval kurikulum:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu kurikulum</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Scrolldown menu persetujuan kurikulum</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu atur approval </li>
+                                        <li class="list-group-item list-group-item-secondary">4. Checklist tahun kurikulum dan Prodi</li>
+                                        <li class="list-group-item list-group-item-light">5. Pilih action dan tekan button go
+                                            <img src="assets/img/ibik/kurikulum/kaprodi_adkuri.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-secondary">6. Berikut adalah add kurikulum berhasil
+                                            <img src="assets/img/ibik/kurikulum/kaprodi_sukseadd.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="kurikulum_accwarek">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Approval Warek 1</h4>
+                                <hr>
+                                <p> Modul ini digunakan untuk melakukan approval kurikulum oleh Warek 1.
+                                    Berikut adalah tata cara untuk melakukan approval kurikulum:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara approval kurikulum:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu kurikulum</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Scrolldown menu persetujuan kurikulum</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu atur approval </li>
+                                        <li class="list-group-item list-group-item-secondary">4. Checklist tahun kurikulum dan Prodi</li>
+                                        <li class="list-group-item list-group-item-light">5. Pilih action dan tekan button go
+                                            <img src="assets/img/ibik/kurikulum/kaprodi_adkuri.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-secondary">6. Berikut adalah add kurikulum berhasil
+                                            <img src="assets/img/ibik/kurikulum/kaprodi_sukseadd.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="kurikulum_pengaturan">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Atur GBPP & SAP</h4>
+                                <hr>
+                                <p> Modul ini digunakan untuk melakukan kelola GBPP & SAP oleh kaprodi.
+                                    Berikut adalah tata cara untuk melakukan kelola GBPP & SAP:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara kelola GBPP:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu kurikulum</li>
+                                        <li class="list-group-item list-group-item-light">2. Scrolldown menu silabus</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu atur GBPP & SAP</li>
+                                        <li class="list-group-item list-group-item-light">4. Pilih dan tekan button GBPP pada mata kuliah yang dipilih</li>
+                                        <li class="list-group-item list-group-item-light">5. Kelola GBPP
+                                            <img src="assets/img/ibik/kurikulum/kaprodi_gbpp.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara kelola SAP:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu kurikulum</li>
+                                        <li class="list-group-item list-group-item-light">2. Scrolldown menu silabus</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu atur GBPP & SAP</li>
+                                        <li class="list-group-item list-group-item-light">4. Pilih dan tekan button SAP pada mata kuliah yang dipilih</li>
+                                        <li class="list-group-item list-group-item-light">5. Kelola SAP
+                                            <img src="assets/img/ibik/kurikulum/kaprodi_sap.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!--/.Modul Kurikulum-->
+                <!--Modul Perwalian-->
+                <section id="#" class="">
+                <section id="perwalian_aktor">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4><i class="icon icon-folders"></i>Perwalian</h4>
+                            <hr>
+                            <p>Berikut ini adalah aktor dan alur proses dari Modul Perwalian:</p>
+                            <table class="table table-bordered table-striped">
+                                <tbody>
+                                <tr>
+                                    <th scope="row"><code>Doswal</code></th>
+                                    <td> Pada modul perwalian ini, fitur yang didapat oleh Dosen Wali antara lain: melihat informasi
+                                         data mahasiswa, konsultasi, dan catatan LKS untuk mahasiswa.
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="table-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                    
+                    <section id="perwalian_dataMahasiswa">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Informasi Data Mahasiswa</h4>
+                                <hr>
+                                <p>
+                                    Informasi data mahasiswa yang dapat dilihat oleh dosen wali antara lain: profil mahasiswa, rencana studi & nilai
+                                    kehadiran, TAK, Conversations, Pembayaran, Edit data mahasiswa, registrasi, dan profiling data. berikut tatacara
+                                    untuk ke menu informasi data mahasiswa.
+                                    <div class="list-group">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Tata cara informasi data mahasiswa:</li>
+                                            <li class="list-group-item list-group-item-primary">1. Login sebagai dosen wali</li>
+                                            <li class="list-group-item list-group-item-secondary">2. Akses menu perwalian</li>
+                                            <li class="list-group-item list-group-item-success">3. Akses menu pilih mahasiswa</li>
+                                            <li class="list-group-item list-group-item-danger">4. Klik dan pilih data mahasiswa yang akan dilihat datanya
+                                                <img src="assets/img/ibik/perwalian/perwalian_1.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            </li>
+                                            <li class="list-group-item list-group-item-danger">5. Pilih menu
+                                                <img src="assets/img/ibik/perwalian/perwalian_2.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="perwalian_konsultasi">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Konsultasi</h4>
+                                <hr>
+                                <p> menu perwalian juga terdapat fitur konsultasi yang memudahkan bagi dosen wali dan mahasiswa berinteraksi.
+                                    User dapat memilih menu konsultasi,
+                                    kemudian pilih lihat pesan. Halaman ini menampilkan semua pesan yang masuk dari mahasiswa:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara lihat pesan:</li>
+                                        <li class="list-group-item list-group-item-light">1. Akses menu perwalian</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Akses menu konsultasi</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu lihat pesan </li>
+                                        <li class="list-group-item list-group-item-secondary">4. Klik dan pilih mahasiswa yang akan dibalas pesan</li>
+                                        <li class="list-group-item list-group-item-light">5. Isi pesan
+                                            <img src="assets/img/ibik/perwalian/perwalian_3.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-secondary">6. Klik button send</li>
+                                    </ul>
+                                </div>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara kirim pesan:</li>
+                                        <li class="list-group-item list-group-item-light">1. Akses menu perwalian</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Akses menu konsultasi</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu kirim pesan </li>
+                                        <li class="list-group-item list-group-item-secondary">4. Isi pesan
+                                            <img src="assets/img/ibik/perwalian/perwalian_4.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">5. Klik button send</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="perwalian_catatanlks">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Catatan LKS</h4>
+                                <hr>
+                                <p> Dosen wali dapat memberikan Laporan Kemajuan Studi kepada mahasiswa dan orang tua dengan memilih menu CATATAN LKS. Pada halaman ini,
+                                    user dapat memberi catatan kepada mahasiswa atau pun kepada orang tua dari mahasiswa tersebut.
+                                    Apabila telah selesai, user klik “save” dan jika ingin melihat laporan maka klik “view LKS nilai”.
+                                    Berikut tatacara untuk melakukan pengisian catatan LKS:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara isi catatan lks:</li>
+                                        <li class="list-group-item list-group-item-light">1. Akses menu perwalian</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Akses menu catatan LKS</li>
+                                        <li class="list-group-item list-group-item-light">3. Pilih nama mahasiswa dan isi catatan LKS </li>
+                                        <li class="list-group-item list-group-item-secondary">4. Klik button save
+                                            <img src="assets/img/ibik/perwalian/perwalian_5.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">5. Berikut hasil catatan LKS
+                                            <img src="assets/img/ibik/perwalian/perwalian_6.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="perwalian_lulus">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Pengajuan Lulus Tingkat</h4>
+                                <hr>
+                                <p>Pada menu pengajuan status akademik, user dapat melakukan proses lulus tingkat dengan melakukan persetujuan.
+                                    Berikut tatacara untuk melakukan pengajuan status akademik:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara pengajuan lulus tingkat:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu nilai</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Akses menu pengajuan statik akademik</li>
+                                        <li class="list-group-item list-group-item-light">3. Pilih nama mahasiswa dan isi catatan LKS 
+                                            <img src="assets/img/ibik/perwalian/perwalian_7.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                                <p>Pada menu pengajuan status akademik, Doswal dapat melakukan proses lulus tingkat
+                                                    dengan melakukan persetujuan</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!--/.Modul perwalian-->
+                <!--Data Mahasiswa-->
+                <section id="data_mahasiswa" class="">
+                    <section id="perwalian_aktor">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folders"></i>Data Mahasiswa</h4>
+                                <hr>
+                                <p>Berikut ini adalah fitur dari menu data mahasiswa:</p>
+                                <table class="table table-bordered table-striped">
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row"><code>Mahasiswa</code></th>
+                                        <td> Menu ini menampilkan daftar mahaiswa, user dapat memfilter data mahaiswa berdasarkan tahun
+                                            akademik dan semester.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><code>Laporan Studi</code></th>
+                                        <td> Menu ini menampilkan daftar laporan studi mahaiswa, seperti: laporan IPK per semester, detail
+                                            laporan IPK per semester, laporan IPK per tahun lulus, detail laporan  IPK per tahun lulus, Lama
+                                            studi, detail lama studi, dan detail sisa SKS mahasiswa.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><code>Bantuan Jadwal</code></th>
+                                        <td> Menu ini menampilkan daftar seluruh jadwal, seperti: jadwal dosen, jadwal kelas, mahasiswa konflik,
+                                             jadwal dosen, jadwal ujian mahasiswa, dan jadwal mahasiswa.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><code>Status Registrasi</code></th>
+                                        <td> Menu ini menampilkan daftar status tahap registrasi dari seluruh program studi. Data yang ditampilkan
+                                            antara lain: fakultas, program studi, total mahasiswa, jumlah status (lunas, ambil MK, AC, Cetak
+                                            KSM, Not Reg, dan reset) registrasi mahasiswa, total mahasiswa yang cuti, total mahasiswa yang keluar.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><code>Daftar Dosen Wali</code></th>
+                                        <td> Menu ini menampilkan daftar dosen wali, user dapat memfilter data berdasarkan program studi, angkatan,
+                                            dan status mahasiswa. Selain itu user juga dapat melakukan impor, cetak, dan cetak SK wali.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><code>Laporan Perkuliahan</code></th>
+                                        <td> Menu ini terdiri dari beberapa menu yaitu: laporan kehadiran dosen dan kehadiran per perkuliahan.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><code>Jumlah Mahasiswa</code></th>
+                                        <td> Menu ini terdiri dari beberapa menu yaitu: jumlah mahasiswa program studi per semester, jumlah mahasiswa,
+                                             jumlah mahasiswa transfer ekstensi, jumlah mahasiswa program studi, jumlah detail mahasiswa program studi,
+                                             distribusi agama mahasiswa, distribusi jenis kelamin mahasiswa, distribusi provinsi mahasiswa,
+                                             distribusi suku mahasiswa, distribusi pekerjaan orang tua, distribusi pendapatan orang tua, rekap status
+                                             mahasiswa universitas, rekap status mahasiswa fakultas, rekap status mahasiswa program studi, rekap
+                                             Kelulusan tepat waktu.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><code>Surat Keterangan Lulus</code></th>
+                                        <td> Menu ini menampilkan surat keterangan lulus berdasarkan filter program studi, angkatan, periode yudisium,
+                                             dan mahasiswa.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><code>Presentase Kelulusan</code></th>
+                                        <td> Menu ini menampilkan daftar persentase kelulusan, data yang ditampilkan antara lain: angkatan, persentase kelulusan
+                                            tidak tepat waktu, dan persentase kelulusan tepat waktu.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><code>Skorsing Mahasiwa</code></th>
+                                        <td> Menu ini digunakan untuk kelola Skorsing mahasiswa, user dapat melakukan tambah mahasiswa Skorsing, impor mahasiswa skorsing,
+                                             dan kelola mahasiswa skorsing.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><code>Pembayaran Mahasiswa</code></th>
+                                        <td> Menu ini menampilkan daftar pembayaran mahasiswa,.
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="table-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="perwalian_lulus">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Skorsing</h4>
+                                <hr>
+                                <p> Menu ini digunakan untuk kelola Skorsing mahasiswa, user dapat melakukan tambah mahasiswa Skorsing,
+                                    impor mahasiswa skorsing, dan kelola mahasiswa skorsing. Berikut tatacara untuk melakukan kelola skorsing:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara kelola skorsing:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu data mahasiswa</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Akses menu skorsing mahasiswa</li>
+                                        <li class="list-group-item list-group-item-light">3. Kelola skorsing mahaiswa 
+                                            <img src="assets/img/ibik/data_mahasiswa/data_mahasiswa1.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    </section>
+                <!--/Data mahasiswa-->
+                <!--Data Pegawai-->
+                <section id="#" class="">
+                    <section id="data_pegawai">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Aktor Data Pegawai</h4>
+                                <hr>
+                            <p>Berikut ini adalah aktor proses dari menu data pegawai:</p>
+                            <table class="table table-bordered table-striped">
+                                <tbody>
+                                <tr>
+                                    <th scope="row"><code>Admin SDM</code></th>
+                                    <td> Admin SDM bertugas untuk melakukan kelola data pegawai dan monitoring data pegawai.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Pegawai</code></th>
+                                    <td> Pada menu ini pegawai dapat melakukan melengkapi data dan melihat data.
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="dataPegawai_adminSDM">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Kelola dan Monitoring Data Pegawai</h4>
+                                <hr>
+                                <p> Menu ini digunakan untuk melihat dan kelola data pegawai oleh admin SDM, pada menu ini terdapat beberapa tab menu yaitu:
+                                    lihat pegawai, lihat dosen luar biasa, lihat pegawai outsource, lihat pegawai TPNA, lihat pegawai TLLH,
+                                    approval data, history semua pegawai. Berikut tatacara untuk melakukan kelola data pegawai:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara kelola data pegawai:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu manajemen SDM</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Scrolldown menu pegawai</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu data pegawai </li>
+                                        <li class="list-group-item list-group-item-secondary">4. Kelola Data pegawai
+                                            <img src="assets/img/ibik/data_pegawai/data_pegawai1.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara upload dokumen SK:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu manajemen SDM</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Scrolldown menu pegawai</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu data pegawai </li>
+                                        <li class="list-group-item list-group-item-secondary">4. Pilih pegawai</li>
+                                        <li class="list-group-item list-group-item-light">5. Klik button employee history</li>
+                                        <li class="list-group-item list-group-item-secondary">6. Pilih tab upload dokumen riwayat
+                                            <img src="assets/img/ibik/data_pegawai/data_pegawai2.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">7. klik tambah button</li>
+                                        <li class="list-group-item list-group-item-secondary">8. Isi data
+                                            <img src="assets/img/ibik/data_pegawai/data_pegawai3.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">9.Klik tambah button</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="dataPegawai_pegawai">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Kelengkapan data pegawai</h4>
+                                <hr>
+                                <p> Menu ini digunakan untuk melihat dan melengkapi data pegawai oleh pegawai.
+                                     Berikut tatacara untuk melakukan kelola data pegawai:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara melihat SK pegawai:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu manajemen SDM</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Scrolldown menu pegawai</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu data pegawai </li>
+                                        <li class="list-group-item list-group-item-secondary">4. Pilih tab riwayat lokasi kerja
+                                            <img src="assets/img/ibik/data_pegawai/data_pegawai4.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                            <p>Berikut ini adalah beberapa fitur untuk kelengkapan dan kelola data pegawai:</p>
+                            <table class="table table-bordered table-striped">
+                                <tbody>
+                                <tr>
+                                    <th scope="row"><code>Data Informasi umum </code></th>
+                                    <td>Berisi informasi umum pegawai seperti data pribadi, keahlian, bank, dan data pekerjaan.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Data pelatihan</code></th>
+                                    <td> Berisi data informasi riwayat pelatihan yang pernah diikuti oleh pegawai.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Data pendidikan</code></th>
+                                    <td> Berisi data informasi pendidikan yang telah ditempuh oleh pegawai.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Data penghargaan</code></th>
+                                    <td> Berisi data informasi penghargaan yang pernah diraih oleh pegawai</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Data Keluarga</code></th>
+                                    <td> Berisi data informasi keluarga pegawai.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Data riwayat kesehatan</code></th>
+                                    <td>Berisi data informasi riwayat kesehatan yang dimiliki oleh pegawai.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Data riwayat lokasi kerja</code></th>
+                                    <td>Berisi data  informasi riwayat lokasi kerja pegawai.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Data dokumen</code></th>
+                                    <td>Berisi data informasi dokumen pegawai seperti gaji dasar, npwp, ktp, kk dll.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </section>
+                    </section>
+                <!--/Data pegawai-->
+                 <!--Cuti-->
+                 <section id="#" class="">
+                    <section id="cuti">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Aktor Menu Cuti</h4>
+                                <hr>
+                            <p>Berikut ini adalah aktor proses dari menu menu cuti:</p>
+                            <table class="table table-bordered table-striped">
+                                <tbody>
+                                <tr>
+                                    <th scope="row"><code>Admin SDM</code></th>
+                                    <td> Admin SDM bertugas untuk melakukan kelola menu cuti dan monitoring cuti pegawai.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Pegawai</code></th>
+                                    <td> Pada menu ini pegawai dapat melakukan melengkapi data cuti pegawai.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>Atasan</code></th>
+                                    <td> Pada menu ini atasan perlu untuk approval cuti pegawai.
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="cuti_adminSDM">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Kelola dan Monitoring Data Cuti Pegawai</h4>
+                                <hr>
+                                <p> Menu ini digunakan untuk kelola dan monitoring cuti pegawai oleh admin SDM, berikut tatacara untuk melakukan kelola
+                                    dan monitoring cuti pegawai:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara generate kuota cuti:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu manajemen SDM</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Scrolldown menu cuti</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu pengaturan cuti</li>
+                                        <li class="list-group-item list-group-item-secondary">4. Isi Data
+                                            <img src="assets/img/ibik/data_pegawai/data_pegawai5.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                        <li class="list-group-item list-group-item-light">5. Klik button generate</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="cuti_pegawai">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Pengajuan Cuti Pegawai</h4>
+                                <hr>
+                                <p> Menu ini digunakan untuk pengajuan cuti pegawai oleh pegawai:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara pengajuan cuti:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu manajemen SDM</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Scrolldown menu cuti</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu pengajuan cuti</li>
+                                        <li class="list-group-item list-group-item-secondary">4. Isi Data
+                                            <img src="assets/img/ibik/data_pegawai/data_pegawai6.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="cuti_approval">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4><i class="icon icon-folder5"></i>Approval Cuti Pegawai</h4>
+                                <hr>
+                                <p> Menu ini digunakan untuk approval pengajuan cuti pegawai oleh atasan:
+                                </p>
+                                <div class="list-group" style="margin-bottom: 15px;">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tata cara approval cuti:</li>
+                                        <li class="list-group-item list-group-item-light">1. Scrolldown menu manajemen SDM</li>
+                                        <li class="list-group-item list-group-item-secondary">2. Scrolldown menu cuti</li>
+                                        <li class="list-group-item list-group-item-light">3. Akses menu data cuti bawahan</li>
+                                        <li class="list-group-item list-group-item-secondary">4. klik button approval
+                                            <img src="assets/img/ibik/data_pegawai/data_pegawai7.png"
+                                                class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    </section>
+                <!--/Cuti-->
+
+
+
+            </article>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class=" col-lg-2 col-xl-3 col-12 responsive-phone"><a href="#" class="brand">
+                <img src="assets/img/ibik/ibik_little.png" alt="Knowledge">
+                <span class="circle"></span>
+            </a>
+            </div>
+            <div class="col-6  col-md-4 col-lg-2">
+                <h6>Modul Admisi</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Penerimaan Camaba</a></li>
+                    <li><a href="#">Penerimaan Maba</a></li>
+                    <li><a href="#">Registrasi Ulang Maba</a></li>
+                </ul>
+            </div>
+            <div class="col-6  col-md-4 col-lg-2">
+                <h6>Modul Akademik</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Kelola Rencana Mengajar</a>
+                    </li>
+                    <li><a href="#">Registrasi Matkul Mala</a>
+                    </li>
+                    <li><a href="#">TA/PA</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6  col-md-4 col-lg-2">
+                <h6>Modul HR</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Kelola Pegawai</a>
+                    </li>
+                    <li><a href="#">Cuti</a>
+                    </li>
+                    <li><a href="#">Kelengkapan Data Pegawai</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-12 col-12 col-xl-3 responsive-phone">
+                <h6>IBIK Bogor</h6>
+                <div class="copyrights">
+                    <p>&#xA9; 2020 IBIK Bogor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<!--End Page page_wrrapper -->
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
