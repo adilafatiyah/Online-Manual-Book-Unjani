@@ -20,6 +20,7 @@
                                         <i class="icon icon-smiling-face"></i> <span>Introduction</span>
                                     </a>
                                 </li>
+                                <!--
                                 <li class="treeview">
                                     <a href="#">
                                         <i class="icon icon-clipboard-list"></i>
@@ -33,6 +34,7 @@
                                         <li><a href="#admisi_registeronsite" target="_blank"><i class="icon icon-circle-o"></i>Register Onsite</a></li>
                                     </ul>
                                 </li>
+                                -->
                                 <li class="treeview">
                                     <a href="#">
                                         <i class="icon icon-clipboard-list"></i>

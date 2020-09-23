@@ -18,6 +18,7 @@
                                         <i class="icon icon-smiling-face"></i> <span>Introduction</span>
                                     </a>
                                 </li>
+                                <!--
                                 <li class="treeview">
                                     <a href="#">
                                         <i class="icon icon-clipboard-list"></i>
@@ -30,7 +31,7 @@
                                         <li><a href="#maba_uploadberkas" target="_blank"><i class="icon icon-circle-o"></i>Upload Berkas</a></li>
                                         <li><a href="#maba_beritaacara" target="_blank"><i class="icon icon-circle-o"></i>Unduh Berita Acara</a></li>
                                     </ul>
-                                </li>
+                                </li>-->
                                 
                                 <li class="treeview">
                                     <a href="#">

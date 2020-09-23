@@ -18,7 +18,7 @@ include('fragment/sidemenu_mhs.php');
                 </section>
                 <!--/. Intoroduction-->
 
-                <!--Modul Admisi-->
+                <!--Modul Admisi
                 <section id="#" class="">
                     <section id="maba_suratkeuangan">
                         <div class="row">
@@ -127,7 +127,7 @@ include('fragment/sidemenu_mhs.php');
                         </div>
                     </section>
                 </section>
-                <!--/.Modul Admisi-->
+                /.Modul Admisi-->
 
                 <!--Modul Registrasi Mahasiswa lama-->
                 <section id="#" class="">
@@ -177,7 +177,7 @@ include('fragment/sidemenu_mhs.php');
                                                 class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
                                             </li>
                                             <li class="list-group-item list-group-item-danger">5. Berikut adalah contoh KSM
-                                                <img src="assets/img/unjani/mahasiswa/mala_3.png"
+                                                <img src="assets/img/unjani/mahasiswa/mala_3.PNG"
                                                 class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
                                             </li>
                                       </ul>
