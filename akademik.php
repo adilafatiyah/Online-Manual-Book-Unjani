@@ -9,7 +9,7 @@ include('fragment/sidemenu_akademik.php');
                         <div class="col-md-12">
                             <h4><i class="icon icon-smiling-face"></i> Introduction</h4>
                             <hr>
-                            <p> Aplikasi Sinau terbagi menjadi tiga modul, yaitu Modul akademik (digunakan untuk
+                            <p> Aplikasi Siterpadu terbagi menjadi tiga modul, yaitu Modul akademik (digunakan untuk
                                 aktivitas akademik), Modul finance akademik (digunakan untuk kelola keuangan akademik),
                                 dan Modul HR (digunakan untuk kelola data pegawai).
                             </p>

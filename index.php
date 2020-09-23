@@ -96,7 +96,7 @@
         <div class="container">
             <header class="text-center">
                 <h2>Manual Book</h2>
-                <div class="section-subtitle">Aplikasi Sinau Universitas Jenderal Achmad Yani
+                <div class="section-subtitle">Aplikasi Siterpadu Universitas Jenderal Achmad Yani
                 </div>
             </header>
             <div class="row p-t-b-80">
@@ -134,7 +134,7 @@
                 </div>
                 <div class="col-xl-9">
                     <h3>Contact Us</h3>
-                    <p>If you have question about aplikasi Sinau, please contact humas@unjani.ac.id</p>
+                    <p>If you have question about aplikasi Siterpadu, please contact humas@unjani.ac.id</p>
                 </div>
             </div>
         </div>
