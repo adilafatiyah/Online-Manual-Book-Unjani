@@ -177,7 +177,7 @@ include('fragment/sidemenu_mhs.php');
                                                 class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
                                             </li>
                                             <li class="list-group-item list-group-item-danger">5. Berikut adalah contoh KSM
-                                                <img src="assets/img/unjani/mahasiswa/mala_3.PNG"
+                                                <img src="assets/img/unjani/mahasiswa/mala_3_a.PNG"
                                                 class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
                                             </li>
                                       </ul>

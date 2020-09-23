@@ -399,11 +399,11 @@ include('fragment/sidemenu_akademik.php');
                                         <li class="list-group-item list-group-item-light">1. Scrolldown menu registrasi</li>
                                         <li class="list-group-item list-group-item-secondary">2. Akses menu pilih mahasiswa</li>
                                         <li class="list-group-item list-group-item-light">3. Pilih mahasiswa dan klik button ACC
-                                            <img src="assets/img/unjani/registermahasiswalama/doswal_acc.png"
+                                            <img src="assets/img/unjani/registermahasiswalama/doswal_acc_a.png"
                                                 class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
                                         </li>
                                         <li class="list-group-item list-group-item-light">4. klik button ACC
-                                            <img src="assets/img/unjani/registermahasiswalama/doswal_end.png"
+                                            <img src="assets/img/unjani/registermahasiswalama/doswal_end_a.png"
                                                 class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
                                             <p>Pastikan bahwa jadwal mahasiswa tersebut tidak saling bentrok</p>
                                         </li>
@@ -762,7 +762,7 @@ include('fragment/sidemenu_akademik.php');
                                                 class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
                                         </li>
                                         <li class="list-group-item list-group-item-light">5. Berikut hasil catatan LKS
-                                            <img src="assets/img/unjani/perwalian/perwalian_6.png"
+                                            <img src="assets/img/unjani/perwalian/perwalian_6_a.png"
                                                 class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
                                         </li>
                                     </ul>
@@ -952,7 +952,7 @@ include('fragment/sidemenu_akademik.php');
                                                 </li>
                                                 <li class="list-group-item list-group-item-light">5. Klik cetak daftar hadir</li>
                                                 <li class="list-group-item list-group-item-secondary">6. Berikut tampilan daftar presensi
-                                                    <img src="assets/img/unjani/BAP/BAP_cetak.png"
+                                                    <img src="assets/img/unjani/BAP/BAP_cetak_a.png"
                                                     class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
                                                 </li>
                                             </ul>
@@ -1013,7 +1013,7 @@ include('fragment/sidemenu_akademik.php');
                                         <tbody>
                                         <tr>
                                             <th scope="row"><code>Alamat I-Gadis</code></th>
-                                            <td> Buka alamat http://kis.unjani.ac.id/igadis/ kemudian masukan username dan password.
+                                            <td> Buka alamat https://siterpadu.unjani.ac.id/igadis kemudian masukan username dan password.
                                             </td>
                                         </tr>
                                         </tbody>
