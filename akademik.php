@@ -18,7 +18,7 @@ include('fragment/sidemenu_akademik.php');
                 </section>
                 <!--/. Intoroduction-->
 
-                <!--Modul Admisi-->
+                <!--Modul Admisi
                 <section id="admisi" class="">
                     <div class="row">
                         <div class="col-md-12">
@@ -133,7 +133,7 @@ include('fragment/sidemenu_akademik.php');
                         </div>
                     </section>
                 </section>
-                <!--/.Modul Admisi-->
+                /.Modul Admisi-->
                 <!--Matakuliah Tawar-->
                 <section id="#" class="">
                     <section id="matkultawar_aktor">
