@@ -81,7 +81,7 @@ include('fragment/sidemenu_financeAkademik.php');
                                             <li class="list-group-item list-group-item-light">12. Klik tab MABA</li>
                                             <li class="list-group-item list-group-item-light">13. Pilih nama mahasiswa dan klik button "pencil" pada kolom aksi</li>
                                             <li class="list-group-item list-group-item-light">14. Klik icon uang pada kolom aksi
-                                                <img src="assets/img/unjani/admisi/admisi_verifikasikeuangan.PNG"
+                                                <img src="assets/img/unjani/admisi/admisi_verifikasikeuangan.png"
                                                     class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
                                             </li>
                                             <li class="list-group-item list-group-item-light">15. Klik button tambah pembayaran
