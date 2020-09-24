@@ -176,8 +176,8 @@ include('fragment/sidemenu_mhs.php');
                                                 <img src="assets/img/unjani/mahasiswa/mala_2.png"
                                                 class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
                                             </li>
-                                            <li class="list-group-item list-group-item-danger">5. Berikut adalah contoh KSM
-                                                <img src="assets/img/unjani/mahasiswa/mala_3_a.PNG"
+                                            <li class="list-group-item list-group-item-secondary">5. Berikut adalah contoh Kartu Studi Mahasiswa (KSM)
+                                            <img src="assets/img/unjani/mahasiswa/mala_3_a.PNG"
                                                 class="img-fluid" alt="Responsive image" style="margin-bottom: 10px;margin-top: 10px;">
                                             </li>
                                       </ul>

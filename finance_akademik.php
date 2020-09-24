@@ -78,7 +78,7 @@ include('fragment/sidemenu_financeAkademik.php');
                                             <li class="list-group-item list-group-item-light">9. Scrolldown menu finansial</li>
                                             <li class="list-group-item list-group-item-light">10. Scrolldown menu pembayaran reguler</li>
                                             <li class="list-group-item list-group-item-light">11. Akses menu data pembayaran</li>
-                                            <li class="list-group-item list-group-item-light">12. Klik tab MABA</li>
+                                            <li class="list-group-item list-group-item-light">12. Klik tab MALA (untuk pelunasan mahasiswa lama)</li>
                                             <li class="list-group-item list-group-item-light">13. Pilih nama mahasiswa dan klik button "pencil" pada kolom aksi</li>
                                             <li class="list-group-item list-group-item-light">14. Klik icon uang pada kolom aksi
                                                 <img src="assets/img/unjani/admisi/admisi_verifikasikeuangan.png"
